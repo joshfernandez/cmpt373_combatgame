@@ -1,0 +1,80 @@
+strings:
+ invalid-direction: 'You cannot go that way'
+ invalid-target: 'not found'
+
+ players-list-area: 'Players in your area'
+ players-list-world: 'Players in the world'
+ exits-list: 'Exits from your area'
+
+ unspecified-player: 'Player not specified'
+ unspecified-target: 'Target not specified'
+ unspecified-exit: 'No exit specified'
+
+ player: 'Player'
+ object: 'Object'
+
+ global-tag: '[All]'
+ area-tag: '&c[Area]'
+ private-tag: '&m[Whisper]'
+ server-name: "&yServer&w"
+
+ login-ok: "Login successful"
+ user-not-found: "This user doesn't exist"
+ invalid-cred: "You have entered invalid credentials"
+ user-logged-in: "User is already logged in"
+
+ reg-ok: "Registration successful. Welcome!"
+ user-exists: "This username has already been taken"
+ username-too-long: "This username has too many characters"
+ username-invalid: "You cannot use that username"
+
+ player-kicked: "has been kicked out"
+ player-respawned: 'You have respawned.'
+
+ game-player-enter-area: '$n arrives from $a.'
+ game-player-leave-area: '$n leaves to $a.'
+ game-player-enters: '$n arrives.'
+ up-relative-direction: 'above'
+ down-relative-direction: 'below'
+ north-relative-direction: 'the north'
+ south-relative-direction: 'the south'
+ east-relative-direction: 'the east'
+ west-relative-direction: 'the west'
+
+ combat-engage-issue: 'You engage &r$N&w in battle'
+ combat-engage-receive: 'You have been engaged in battle by &r$n&w'
+ combat-attack-issue: 'You attack &r$N&w and deal &y$d&w damage'
+ combat-attack-receive: 'You take &y$d&w damage from &r$n&w'
+ combat-attack-id: 'attack'
+ combat-result-victory: 'You &gWon&w the battle'
+ combat-result-loss: 'You were &rkilled&w and lost the battle'
+
+ spell-list-header: 'List of Spells: '
+ spell-invalid-usage: 'Invalid usage of cast. Type \"help\" cast'
+ spell-insufficient-mana: 'Not enough mana to cast &c$a&w'
+ spell-unknown: 'You do not know the spell ''&c$a&w'''
+ spell-offense-self: 'You cast &c$a&w on yourself for &y$d&w damage'
+ spell-offense-source: 'You cast &c$a&w on &r$N&w for &y$d&w damage'
+ spell-offense-target: '&r$n&w casts &c$a&w on you for &y$d&w damage'
+ spell-defense-self: 'You cast &c$a&w on yourself and heal &g$d&w'
+ spell-defense-source: 'You cast &c$a&w on &r$N&w and heal &g$d&w'
+ spell-defense-target: '&r$n&w casts &c$a&w on you and heals you for &$d'
+ spell-generic-self: 'You cast &c$a&w on yourself'
+ spell-generic-source: 'You cast &c$a&w on &r$N&w'
+ spell-generic-target: '&r$n&w casts &c$a&w on you'
+
+ status-effect-expiry: 'Your status effect wears off'
+
+ character-status: '%s\nLevel: %d\nHealth: %d\nMana: %d\n'
+
+ edit-in-use: "Area is currently being edited"
+ edit-cancel: "You stopped editing the area"
+ edit-already-editing: "You are already editing an area. Use the <resume> argument to continue editing"
+ edit-not-editing: "You are not currently editing an area"
+ edit-area-help: "Use the 'area [id]' argument to begin editing"
+ edit-invalid-arg: "Invalid argument to the edit command"
+ edit-saved: "Changes have been saved"
+ edit-save-error: "Error saving changes:"
+
+
+

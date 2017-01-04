@@ -1,0 +1,9 @@
+#ifndef ADVENTURE2016_PLAYERROLE_HPP
+#define ADVENTURE2016_PLAYERROLE_HPP
+
+enum class PlayerRole {
+    NORMAL = 1 << 0,
+    ADMIN = 1 << 1,
+    WORLDBUILDER = 1 << 2,
+};
+#endif //ADVENTURE2016_PLAYERROLE_HPP

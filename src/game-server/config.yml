@@ -1,0 +1,12 @@
+#Port number for the server
+port: 4000
+#Path to the map file
+map-file: "data/newgate.yml"
+#Path to the spells file
+spell-file: "data/spells.yml"
+#The number of ticks per second that the server should target
+ticks-per-second: 10
+#Options for logging
+google-log-directory: "./"
+#commands configuration file
+commands-file: "data/commands.yml"

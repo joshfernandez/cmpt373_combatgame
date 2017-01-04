@@ -1,0 +1,1114 @@
+AREA:
+  name: MotherGoose
+HELPS: []
+NPCS:
+- armor: 0
+  damage: 1d7+2
+  description:
+  - A silly little girl, with blonde hair and sad blue eyes. She really wants
+  - to find her sheep.
+  exp: 0
+  gold: 223
+  hit: 2d7+96
+  id: 2900
+  keywords:
+  - little
+  - bo-peep
+  - girl
+  level: 8
+  longdesc:
+  - Little Bo-Peep has lost her sheep and doesn't know where to find them.
+  shortdesc: Little Bo-Peep
+  thac0: 0
+- armor: 0
+  damage: 1d6+1
+  description:
+  - A large fleece-covered critter, this poor sheep has no tail.
+  exp: 0
+  gold: 121
+  hit: 2d6+60
+  id: 2901
+  keywords:
+  - sheep
+  level: 5
+  longdesc:
+  - A Sheep is hiding here.
+  shortdesc: Sheep
+  thac0: 0
+- armor: 0
+  damage: 1d7+2
+  description:
+  - A large, seemingly friendly boy, Tweedle Dum is way to into his toys.
+  exp: 0
+  gold: 342
+  hit: 2d7+96
+  id: 2902
+  keywords:
+  - tweedle
+  - dum
+  level: 8
+  longdesc:
+  - Tweddle Dum is standing here arguing with Twiddle Dee about his rattle.
+  shortdesc: Tweedle Dum
+  thac0: 0
+- armor: 0
+  damage: 1d7+2
+  description:
+  - A large, seemingly friendly boy, Tweedle Dee is way to into Tweedle Dums
+  - toys.
+  exp: 0
+  gold: 326
+  hit: 2d7+96
+  id: 2903
+  keywords:
+  - tweedle
+  - dee
+  level: 8
+  longdesc:
+  - Tweedle Dee is here arguing with Tweedle Dum.
+  shortdesc: Tweedle Dee
+  thac0: 0
+- armor: 0
+  damage: 2d4+2
+  description:
+  - A spry young man in green, Jack is jumping over a candlestick.
+  exp: 0
+  gold: 232
+  hit: 2d7+121
+  id: 2904
+  keywords:
+  - jack
+  level: 10
+  longdesc:
+  - Jack is here, jumping over a candlestick.
+  shortdesc: Jack
+  thac0: 0
+- armor: 0
+  damage: 2d4+2
+  description:
+  - The farmer's wife is quite a sight, she is a plump, older woman who is all
+  - out of breath as if she were just in some kind of chase.
+  exp: 0
+  gold: 113
+  hit: 2d7+121
+  id: 2905
+  keywords:
+  - farmer's
+  - wife
+  level: 10
+  longdesc:
+  - The Farmer's Wife is standing here.
+  shortdesc: Farmer's Wife
+  thac0: 0
+- armor: 0
+  damage: 1d6+1
+  description:
+  - You see before you, a blind mouse. Strangely it seems to be missing its
+  - tail.
+  exp: 0
+  gold: 432
+  hit: 2d6+60
+  id: 2906
+  keywords:
+  - blind
+  - mice
+  - mouse
+  level: 5
+  longdesc:
+  - A Blind Mouse is running up the clock.
+  shortdesc: Blind Mice
+  thac0: 0
+- armor: 0
+  damage: 1d7+2
+  description:
+  - A little girl with her morning breakfast, Miss Muffett is afraid of
+  - spiders.
+  exp: 0
+  gold: 300
+  hit: 2d7+96
+  id: 2907
+  keywords:
+  - little
+  - miss
+  - muffett
+  - girl
+  level: 8
+  longdesc:
+  - Little Miss Muffett is sitting on her tuffet.
+  shortdesc: Little Miss Muffett
+  thac0: 0
+- armor: 0
+  damage: 1d7+1
+  description:
+  - A huge hairy spider with BIG fangs, he looks as though he'd like to have
+  - you for breakfast.
+  exp: 0
+  gold: 327
+  hit: 2d7+71
+  id: 2908
+  keywords:
+  - spider
+  level: 5
+  longdesc:
+  - A large spider has dropped in.
+  shortdesc: Spider
+  thac0: 0
+- armor: 0
+  damage: 3d4+4
+  description:
+  - Humpty Dumpty is a large egg in clothes, sitting on this wall as if he
+  - won't fall.
+  exp: 0
+  gold: 264
+  hit: 3d9+229
+  id: 2909
+  keywords:
+  - humpty
+  - dumpty
+  - egg
+  level: 17
+  longdesc:
+  - Humpty Dumpty is sitting on the wall.
+  shortdesc: Humpty Dumpty
+  thac0: 0
+- armor: 0
+  damage: 2d6+3
+  description:
+  - A large black stallion, wearing the kinds colors, is waiting here for
+  - its rider.
+  exp: 0
+  gold: 143
+  hit: 3d9+208
+  id: 2910
+  keywords:
+  - king's
+  - horse
+  level: 15
+  longdesc:
+  - One of the King's Horses is standing here.
+  shortdesc: King's Horse
+  thac0: 0
+- armor: 0
+  damage: 2d6+3
+  description:
+  - One of the king's men, he looks very confused about what to do about
+  - the egg on the wall.
+  exp: 0
+  gold: 231
+  hit: 3d9+233
+  id: 2911
+  keywords:
+  - king's
+  - men
+  - man
+  level: 15
+  longdesc:
+  - One of the King's men is here.
+  shortdesc: King's Man
+  thac0: 0
+- armor: 0
+  damage: 2d5+3
+  description:
+  - Old Mother Hubbard is looking mighty lean. Seems her cubbards are bare.
+  exp: 0
+  gold: 121
+  hit: 2d10+170
+  id: 2912
+  keywords:
+  - old
+  - mother
+  - hubbard
+  - woman
+  level: 13
+  longdesc:
+  - Old Mother Hubbard is looking in the cubbard.
+  shortdesc: Old Mother Hubbard
+  thac0: 0
+- armor: 0
+  damage: 2d4+2
+  description:
+  - A mangy mutt, he seems to be a bit underfed.
+  exp: 0
+  gold: 123
+  hit: 2d7+121
+  id: 2913
+  keywords:
+  - dog
+  level: 10
+  longdesc:
+  - The Dog is here.
+  shortdesc: Dog
+  thac0: 0
+- armor: 0
+  damage: 2d4+2
+  description:
+  - Jack is a fine young man who has been sent to fetch water with his sister.
+  exp: 0
+  gold: 132
+  hit: 2d7+121
+  id: 2914
+  keywords:
+  - jack
+  - boy
+  level: 10
+  longdesc:
+  - Jack is here fetching a pail of water.
+  shortdesc: Jack
+  thac0: 0
+- armor: 0
+  damage: 2d4+2
+  description:
+  - Jill is a cute young girl, who has been sent to fetch water with her
+  - brother, Jack.
+  exp: 0
+  gold: 243
+  hit: 2d7+121
+  id: 2915
+  keywords:
+  - jill
+  - girl
+  level: 10
+  longdesc:
+  - Jill is here, helping to fetch the water.
+  shortdesc: Jill
+  thac0: 0
+- armor: 0
+  damage: 2d5+3
+  description:
+  - A very talented cat, he is dressed in breeches and tails, with a very nice
+  - top hat.
+  exp: 0
+  gold: 217
+  hit: 2d10+170
+  id: 2916
+  keywords:
+  - cat
+  level: 13
+  longdesc:
+  - A Cat is playing the fiddle here.
+  shortdesc: Cat
+  thac0: 0
+- armor: 0
+  damage: 2d4+2
+  description:
+  - A large milk cow, she seems to have an unusual love for jumping over
+  - the moon.
+  exp: 0
+  gold: 175
+  hit: 2d7+121
+  id: 2917
+  keywords:
+  - cow
+  level: 10
+  longdesc:
+  - A Cow is here, jumping over the moon
+  shortdesc: Cow
+  thac0: 0
+- armor: 0
+  damage: 2d4+2
+  description:
+  - This little dog seems to find it quite funny to see a cow jump over a moon.
+  exp: 0
+  gold: 193
+  hit: 2d7+121
+  id: 2918
+  keywords:
+  - little
+  - dog
+  level: 10
+  longdesc:
+  - A little dog is laughing to see such a sight.
+  shortdesc: Little Dog
+  thac0: 0
+- armor: 0
+  damage: 2d7+4
+  description:
+  - This Dish seems to have a great affection for his Spoon.
+  exp: 0
+  gold: 127
+  hit: 3d9+208
+  id: 2919
+  keywords:
+  - dish
+  level: 15
+  longdesc:
+  - A Dish is here, running away with the Spoon.
+  shortdesc: Dish
+  thac0: 0
+- armor: 0
+  damage: 2d6+3
+  description:
+  - This Spoon has a lovely face, it is no wonder the Dish is running away with her.
+  exp: 0
+  gold: 317
+  hit: 3d9+208
+  id: 2920
+  keywords:
+  - spoon
+  level: 15
+  longdesc:
+  - A Spoon is here, running away with the Dish.
+  shortdesc: Spoon
+  thac0: 0
+- armor: 0
+  damage: 3d4+4
+  description:
+  - Mother Goose is a grandmotherly type woman, who seems quite content
+  - living with her gander.
+  exp: 0
+  gold: 327
+  hit: 3d9+229
+  id: 2921
+  keywords:
+  - mother
+  - goose
+  level: 17
+  longdesc:
+  - Mother Goose is here, rocking in her chair.
+  shortdesc: Mother Goose
+  thac0: 0
+- armor: 0
+  damage: 3d4+4
+  description:
+  - This is Mother Goose's pet Gander. He is a fine looking goose wearing a
+  - blue ribon around his neck.
+  exp: 0
+  gold: 229
+  hit: 3d9+229
+  id: 2922
+  keywords:
+  - gander
+  level: 17
+  longdesc:
+  - Mother Goose's Gander is here.
+  shortdesc: Gander
+  thac0: 0
+OBJECTS:
+- attributes: []
+  cost: 250
+  extra: []
+  id: 2900
+  item_type: armor
+  keywords:
+  - umbrella
+  longdesc:
+  - A well used umbrella is lying here.
+  shortdesc: umbrella
+  wear_flags:
+  - take
+  weight: 3
+- attributes: []
+  cost: 150
+  extra: []
+  id: 2901
+  item_type: armor
+  keywords:
+  - rattle
+  longdesc:
+  - A broken rattle is lying here.
+  shortdesc: rattle
+  wear_flags:
+  - take
+  weight: 3
+- attributes:
+  - glow
+  cost: 30
+  extra: []
+  id: 2902
+  item_type: light
+  keywords:
+  - candlestick
+  - light
+  - candle
+  longdesc:
+  - A candlestick is lying here.
+  shortdesc: candlestick
+  wear_flags:
+  - take
+  weight: 1
+- attributes: []
+  cost: 300
+  extra: []
+  id: 2903
+  item_type: weapon
+  keywords:
+  - kife
+  - butcher
+  longdesc:
+  - A bloody butcher knife is here.
+  shortdesc: butcher Knife
+  wear_flags:
+  - take
+  weight: 3
+- attributes: []
+  cost: 243
+  extra: []
+  id: 2904
+  item_type: armor
+  keywords:
+  - bow
+  - ribbon
+  longdesc:
+  - A blue neck ribbon and bow is lying here.
+  shortdesc: bow
+  wear_flags:
+  - take
+  weight: 3
+- attributes: []
+  cost: 300
+  extra: []
+  id: 2905
+  item_type: weapon
+  keywords:
+  - mace
+  longdesc:
+  - A small Mace is here.
+  shortdesc: mace
+  wear_flags:
+  - take
+  weight: 3
+- attributes: []
+  cost: 243
+  extra: []
+  id: 2906
+  item_type: armor
+  keywords:
+  - dog's
+  - bone
+  longdesc:
+  - A smelly old dog's bone is lying here.
+  shortdesc: dog's Bone
+  wear_flags:
+  - take
+  weight: 3
+- attributes: []
+  cost: 247
+  extra: []
+  id: 2907
+  item_type: armor
+  keywords:
+  - shirt
+  longdesc:
+  - A rumpled, well worn shirt is lying here.
+  shortdesc: shirt
+  wear_flags:
+  - take
+  weight: 4
+- attributes: []
+  cost: 323
+  extra: []
+  id: 2908
+  item_type: armor
+  keywords:
+  - cape
+  longdesc:
+  - A well worn, brown cape is lying here.
+  shortdesc: cape
+  wear_flags:
+  - take
+  weight: 4
+- attributes: []
+  cost: 2500
+  extra: []
+  id: 2909
+  item_type: fountain
+  keywords:
+  - well
+  longdesc:
+  - A Well is here.
+  shortdesc: well
+  wear_flags: []
+  weight: 16959
+- attributes: []
+  cost: 320
+  extra: []
+  id: 2910
+  item_type: armor
+  keywords:
+  - breeches
+  longdesc:
+  - A pair of light weight breeches is here.
+  shortdesc: breeches
+  wear_flags:
+  - take
+  weight: 3
+- attributes: []
+  cost: 334
+  extra: []
+  id: 2911
+  item_type: weapon
+  keywords:
+  - sword
+  longdesc:
+  - A small sword is lying here.
+  shortdesc: sword
+  wear_flags:
+  - take
+  weight: 3
+RESETS:
+- action: npc
+  id: 2901
+  limit: 3
+  room: 2902
+- action: npc
+  id: 2901
+  limit: 3
+  room: 2902
+- action: npc
+  id: 2901
+  limit: 3
+  room: 2902
+- action: npc
+  id: 2900
+  limit: 1
+  room: 2903
+- action: equip
+  id: 2900
+  slot: 17
+- action: npc
+  id: 2902
+  limit: 1
+  room: 2904
+- action: equip
+  id: 2901
+  slot: 17
+- action: npc
+  id: 2903
+  limit: 1
+  room: 2904
+- action: npc
+  id: 2914
+  limit: 1
+  room: 2905
+- action: equip
+  id: 2907
+  slot: 5
+- action: npc
+  id: 2915
+  limit: 1
+  room: 2905
+- action: equip
+  id: 2908
+  slot: 12
+- action: object
+  id: 2909
+  room: 2905
+- action: npc
+  id: 2907
+  limit: 1
+  room: 2906
+- action: npc
+  id: 2908
+  limit: 1
+  room: 2906
+- action: door
+  id: 1
+  room: 2907
+  state: closed
+- action: npc
+  id: 2906
+  limit: 3
+  room: 2908
+- action: npc
+  id: 2906
+  limit: 3
+  room: 2908
+- action: npc
+  id: 2906
+  limit: 3
+  room: 2908
+- action: door
+  id: 3
+  room: 2908
+  state: closed
+- action: npc
+  id: 2905
+  limit: 1
+  room: 2909
+- action: equip
+  id: 2903
+  slot: 16
+- action: door
+  id: 0
+  room: 2909
+  state: closed
+- action: door
+  id: 0
+  room: 2910
+  state: closed
+- action: door
+  id: 2
+  room: 2910
+  state: closed
+- action: npc
+  id: 2917
+  limit: 1
+  room: 2911
+- action: npc
+  id: 2918
+  limit: 1
+  room: 2911
+- action: door
+  id: 3
+  room: 2912
+  state: closed
+- action: npc
+  id: 2904
+  limit: 1
+  room: 2913
+- action: equip
+  id: 2902
+  slot: 0
+- action: door
+  id: 1
+  room: 2913
+  state: closed
+- action: npc
+  id: 2910
+  limit: 2
+  room: 2914
+- action: npc
+  id: 2910
+  limit: 2
+  room: 2914
+- action: npc
+  id: 2916
+  limit: 1
+  room: 2916
+- action: equip
+  id: 2910
+  slot: 7
+- action: npc
+  id: 2913
+  limit: 1
+  room: 2917
+- action: equip
+  id: 2906
+  slot: 17
+- action: door
+  id: 2
+  room: 2917
+  state: closed
+- action: npc
+  id: 2912
+  limit: 1
+  room: 2918
+- action: npc
+  id: 2919
+  limit: 1
+  room: 2919
+- action: npc
+  id: 2920
+  limit: 1
+  room: 2919
+- action: npc
+  id: 2911
+  limit: 2
+  room: 2920
+- action: equip
+  id: 2905
+  slot: 16
+- action: npc
+  id: 2911
+  limit: 2
+  room: 2920
+- action: equip
+  id: 2911
+  slot: 16
+- action: npc
+  id: 2909
+  limit: 1
+  room: 2921
+- action: npc
+  id: 2921
+  limit: 1
+  room: 2922
+- action: npc
+  id: 2922
+  limit: 1
+  room: 2922
+- action: equip
+  id: 2904
+  slot: 3
+ROOMS:
+- desc:
+  - You are standing at the entrance to a land in which all of Mother Goose's
+  - favorite fable characters live.
+  doors:
+  - desc: []
+    dir: east
+    keywords: []
+    to: 2901
+  - desc: []
+    dir: south
+    keywords: []
+    to: 15079
+  extended_descriptions: []
+  id: 2900
+  name: Entrance
+- desc:
+  - You are traveling along Main Street. There is a beautiful meadow on either
+  - side of the road filled with wild flowers. To your east you can hear the
+  - bleating of sheep, while to your west come the faint sounds of an argument.
+  - The road continues north and south.
+  doors:
+  - desc: []
+    dir: north
+    keywords: []
+    to: 2907
+  - desc: []
+    dir: east
+    keywords: []
+    to: 2902
+  - desc: []
+    dir: south
+    keywords: []
+    to: 2900
+  - desc: []
+    dir: west
+    keywords: []
+    to: 2904
+  extended_descriptions: []
+  id: 2901
+  name: Main Street
+- desc:
+  - You have come to a beautiful meadow full of wildflowers in every color
+  - of the rainbow. There is a large willow tree here that appears to have
+  - sheep tails hanging from the branches as if put there to dry. Hiding in
+  - the tall grasses are a couple of sheep.
+  doors:
+  - desc: []
+    dir: east
+    keywords: []
+    to: 2903
+  - desc: []
+    dir: west
+    keywords: []
+    to: 2901
+  extended_descriptions: []
+  id: 2902
+  name: Meadow
+- desc:
+  - You are in a beautiful meadow. Sitting on a rock nearby is a little
+  - girl with a sad face, who seems to have lost her sheep. Perhaps you
+  - could help her find them.
+  doors:
+  - desc: []
+    dir: west
+    keywords: []
+    to: 2902
+  extended_descriptions: []
+  id: 2903
+  name: Meadow
+- desc:
+  - You are in a secluded area of the meadow. There is a large treehouse
+  - here, and there are strange little toys scattered all about, almost as
+  - if two children lived here.
+  doors:
+  - desc: []
+    dir: east
+    keywords: []
+    to: 2901
+  extended_descriptions: []
+  id: 2904
+  name: Meadow
+- desc:
+  - From atop this hill you can see all of the lands below you. This is
+  - where all of Mother Goose's favorite people come to get their water and
+  - enjoy a little quiet.
+  doors:
+  - desc: []
+    dir: down
+    keywords: []
+    to: 2912
+  extended_descriptions: []
+  id: 2905
+  name: Hill Top
+- desc:
+  - You have come to a lovely little field across the street from the
+  - farmers house. It looks like a good place to stop and take a rest or
+  - have a snack.
+  doors:
+  - desc: []
+    dir: east
+    keywords: []
+    to: 2907
+  extended_descriptions: []
+  id: 2906
+  name: Field
+- desc:
+  - You are on Main Street. You hear screaming coming from the field to your
+  - west and from the farmhouse to your east.  There seems to be something
+  - tumbling down the hill toward you.
+  doors:
+  - desc: []
+    dir: east
+    keywords: []
+    to: 2908
+  - desc: []
+    dir: south
+    keywords: []
+    to: 2901
+  - desc: []
+    dir: west
+    keywords: []
+    to: 2906
+  - desc: []
+    dir: up
+    keywords: []
+    to: 2905
+  extended_descriptions: []
+  id: 2907
+  name: Main Street
+- desc:
+  - You are standing in the family room of a large farmhouse. There is a
+  - fireplace along the north wall with pictures of family on the mantle.
+  - A large grandfather clock dominates one corner of the room. The kitchen
+  - is to the east.
+  doors:
+  - desc: []
+    dir: east
+    keywords: []
+    to: 2909
+  - desc: []
+    dir: west
+    keywords: []
+    to: 2907
+  extended_descriptions: []
+  id: 2908
+  name: Farmhouse
+- desc:
+  - Standing in a large country style kitchen, You notice everything is in
+  - disarray. Pots and pans and butcher knives are strewn all about the room.
+  - There is a back door to your north which exits to a small alley.
+  doors:
+  - desc: []
+    dir: north
+    keywords: []
+    to: 2910
+  - desc: []
+    dir: west
+    keywords: []
+    to: 2908
+  extended_descriptions: []
+  id: 2909
+  name: Kitchen
+- desc:
+  - A small alley running between the farmer's house and Old Mother Hubbards.
+  - There are a few scattered puddles and misplaced gardening tools on the
+  - ground here.
+  doors:
+  - desc: []
+    dir: north
+    keywords: []
+    to: 2917
+  - desc: []
+    dir: south
+    keywords: []
+    to: 2909
+  extended_descriptions: []
+  id: 2910
+  name: Alley
+- desc:
+  - Standing in a well-kept field of grass, you hear a haunting melody
+  - being played on a fiddle to your north. And you notice that from above
+  - the moon seems to be laughing at something.
+  doors:
+  - desc: []
+    dir: north
+    keywords: []
+    to: 2916
+  - desc: []
+    dir: west
+    keywords: []
+    to: 2912
+  extended_descriptions: []
+  id: 2911
+  name: Field
+- desc:
+  - Once again on Main Street, you hear what seems to be a laughing dog to
+  - your east, and to your west you can see flickering candlelight through
+  - the window of the house there. Main Street continues to the north.
+  doors:
+  - desc: []
+    dir: north
+    keywords: []
+    to: 2915
+  - desc: []
+    dir: east
+    keywords: []
+    to: 2911
+  - desc: []
+    dir: west
+    keywords: []
+    to: 2913
+  extended_descriptions: []
+  id: 2912
+  name: Main Street
+- desc:
+  - A small but comfy home, you notice that someone has pushed all the
+  - furniture off to the sides of the room, and put a candlestick, with
+  - a half-burned candle in it, in the center of the floor.
+  doors:
+  - desc: []
+    dir: east
+    keywords: []
+    to: 2912
+  - desc: []
+    dir: south
+    keywords: []
+    to: 2906
+  extended_descriptions: []
+  id: 2913
+  name: House
+- desc:
+  - This is the west wall of town, it is perhaps 8 ft. tall, composed
+  - totally of bricks made here in this littl community. It looks as if it
+  - might be fun to sit or walk upon to get a good view of all that is near.
+  doors:
+  - desc: []
+    dir: north
+    keywords: []
+    to: 2921
+  - desc: []
+    dir: east
+    keywords: []
+    to: 2915
+  extended_descriptions: []
+  id: 2914
+  name: West Wall
+- desc:
+  - You have reached the end of Main Street. There is a large staircase
+  - floating as if in mid-air to the east of the road. To the north and
+  - west you can see the wall of the city.
+  doors:
+  - desc: []
+    dir: north
+    keywords: []
+    to: 2920
+  - desc: []
+    dir: south
+    keywords: []
+    to: 2912
+  - desc: []
+    dir: west
+    keywords: []
+    to: 2914
+  - desc: []
+    dir: up
+    keywords: []
+    to: 2922
+  extended_descriptions: []
+  id: 2915
+  name: End of Main Street
+- desc:
+  - You are in a well kept field of grass. Everywhere you look are grasses
+  - of all kinds. Standing in the middle of all this is an oddly dressed cat
+  - playing a fiddle.
+  doors:
+  - desc: []
+    dir: north
+    keywords: []
+    to: 2919
+  - desc: []
+    dir: south
+    keywords: []
+    to: 2911
+  extended_descriptions: []
+  id: 2916
+  name: Field
+- desc:
+  - The living room in Mother Hubbards house is very bare. You see a small
+  - tattered rug on the floor and a lone rocking chair near the fireplace.
+  - The kitchen is to your north.
+  doors:
+  - desc: []
+    dir: north
+    keywords: []
+    to: 2918
+  - desc: []
+    dir: south
+    keywords: []
+    to: 2910
+  extended_descriptions: []
+  id: 2917
+  name: House
+- desc:
+  - A very sparse and empty room, it is amazing anyone could live here. The
+  - cabinets are all empty and it appears as if the kitchen table was used
+  - for last night's fire.
+  doors:
+  - desc: []
+    dir: south
+    keywords: []
+    to: 2917
+  extended_descriptions: []
+  id: 2918
+  name: Kitchen
+- desc:
+  - At the end of this lovely field you have stumbled across the North Wall
+  - of town. At 8ft tall and made from brick it is a very daunting site for
+  - those trying to run away together, especially the dish and the spoon.
+  doors:
+  - desc: []
+    dir: south
+    keywords: []
+    to: 2916
+  - desc: []
+    dir: west
+    keywords: []
+    to: 2920
+  extended_descriptions: []
+  id: 2919
+  name: North Wall
+- desc:
+  - The North Wall is 8 ft tall and composed entirely of brick made in
+  - this little community, It looks as if it might be fun to sit or walk
+  - upon to get a good view of all that is going on around you.
+  doors:
+  - desc: []
+    dir: east
+    keywords: []
+    to: 2919
+  - desc: []
+    dir: south
+    keywords: []
+    to: 2915
+  - desc: []
+    dir: west
+    keywords: []
+    to: 2921
+  extended_descriptions: []
+  id: 2920
+  name: Along the North Wall
+- desc:
+  - You have come to the northwest corner of town, where the north and west
+  - walls meet. There seems to be some kind of squishy yellow puddle on the
+  - ground here, and it appears as if there are small pieces of eggshell in
+  - it.
+  doors:
+  - desc: []
+    dir: east
+    keywords: []
+    to: 2920
+  - desc: []
+    dir: south
+    keywords: []
+    to: 2914
+  extended_descriptions: []
+  id: 2921
+  name: Northwest Corner
+- desc:
+  - This large fluffy cloud is more homey then most of the houses in town.
+  - There is a comfy rocker with a bag of knitting sitting on the floor on
+  - one side of it and a bag of books sitting on the other.
+  doors:
+  - desc: []
+    dir: down
+    keywords: []
+    to: 2915
+  extended_descriptions: []
+  id: 2922
+  name: Mother Goose's Cloud
+SHOPS: []
+

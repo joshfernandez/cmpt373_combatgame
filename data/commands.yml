@@ -1,0 +1,91 @@
+#Options for commands. each command will always have a base keyword and optional aliases.
+#To configure, add configurations for command-<keyword>
+#desc: description of the command when user types help <command>
+#usage: prints out how to use the command when user types help <command>
+#alias: alternative keywords to trigger the command
+commands:
+  command-look:
+    desc: "Look at the area, or at an entity."
+    usage: "[object]"
+    role: "user"
+    bindings:
+      - "look"
+  command-move:
+    desc: "Move to a connected area."
+    usage: "<direction>"
+    role: "user"
+    bindings:
+      - "go"
+      - "move"
+      - "g"
+  command-players:
+    desc: "Get the players in the current area"
+    usage: ""
+    role: "user"
+    bindings:
+      - "players"
+  command-exits:
+    desc: "Get the list of exits you can move to."
+    usage: ""
+    role: "user"
+    bindings:
+      - "exits"
+  command-say:
+    desc: "Say something to all the players"
+    usage: "<text>"
+    role: "user"
+    bindings:
+      - "say"
+  command-help:
+    desc: "Gets help for commands"
+    usage: "[command]"
+    role: "user"
+    bindings:
+      - "help"
+      - "/h"
+  command-shout:
+    desc: "Shout to everyone in the current area"
+    usage: "<text>"
+    role: "user"
+    bindings:
+      - "shout"
+  command-whisper:
+    desc: "Whisper to a player"
+    usage: "<player-name> <text>"
+    role: "user"
+    bindings:
+      - "whisper"
+      - "/w"
+  command-attack:
+    desc: "Initiate combat with a player, or use your auto-attack when in combat"
+    usage: "<player-name>"
+    role: "user"
+    bindings:
+      - "attack"
+      - "/a"
+  command-cast:
+    desc: "Cast a spell, inside or outside of combat"
+    usage: "<spell> [<player-name>]"
+    role: "user"
+    bindings:
+      - "cast"
+      - "/c"
+  command-status:
+    desc: "Get player status"
+    usage: ""
+    role: "user"
+    bindings:
+      - "status"
+  command-kick:
+    desc: "Kick a player"
+    usage: "<player>"
+    role: "admin"
+    bindings:
+      - "kick"
+      - "/k"
+  command-edit:
+    desc: "Edit areas"
+    usage: "[area|resume|cancel]"
+    role: "worldbuilder"
+    bindings:
+      - "edit"

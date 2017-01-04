@@ -1,0 +1,1898 @@
+AREA:
+  name: Spectral Gate
+NPCS:
+- armor: 0
+  damage: 0d0+0
+  description:
+  - This is a woman, that is obvious, yet she does not quite fit what you
+  - are used to a female looking like.  You can not place what it is at
+  - first.  As you look her over, you see she is tall and quite slim, and
+  - her figure is one to attract eyes.  As you glance again over her face
+  - you notice her face is quite white, almost brilliantly so.  Her eyes
+  - are black as coal, no pupil distinguishable from the iris.  She smiles
+  - as she watches your mind turn to take in her appearance, and that is
+  - the last piece of missing information.  You notice the small fanged
+  - eyeteeth, and realize this is a vampire standing before you.  What
+  - world have you stepped into?
+  exp: 0
+  gold: 0
+  hit: 0d0+0
+  id: 100
+  keywords:
+  - Samylla
+  - receptionist
+  - woman
+  level: 50
+  longdesc:
+  - The Realms of Despair hostess is here to greet you.
+  programs:
+  - commands:
+    - smile $n
+    - say Welcome to the Realms of Despair reception chamber, $n.
+    - say You have yet to enter the actual game, but will soon...
+    - mpechoat $n Please take the time to read everything you see along the way.
+    - 'mpechoat $n - use Newbiechat to speak to the Immortals for assistance:'
+    - mpechoat $n - type "new <message>" to use the channel.
+    - mpechoat $n Please, look around -- just type 'look <object>'.  (look bust)
+    name: act
+    qualifier: arrives from above.~
+  - commands:
+    - say Welcome back, $n.
+    - say Perhaps you come to look around some more?
+    - mpechoat $n I hope you viewed the various tapestries at the top of the stairs.
+    - mpechoat $n They give you a brief look in all directions of our Realms.
+    name: act
+    qualifier: arrives from the north.~
+  - commands:
+    - smile $n
+    - say Welcome to the Realms of Despair reception chamber, $n.
+    - say You have yet to enter the actual game, but will soon...
+    - mpechoat $n Please take the time to read everything you see along the way.
+    - 'mpechoat $n - use Newbiechat to speak to the Immortals for assistance:'
+    - mpechoat $n - type "new <message>" to use the channel.
+    - mpechoat $n Please, look around -- just type 'look <object>'.  (look bust)
+    name: act
+    qualifier: flys in from above.~
+  - commands:
+    - say Welcome back, $n.
+    - say Perhaps you come to look around some more?
+    - mpechoat $n I hope you viewed the various tapestries at the top of the stairs.
+    - mpechoat $n They give you a brief look in all directions of our Realms.
+    name: act
+    qualifier: flys in from the north.~
+  shortdesc: Samylla
+  thac0: 0
+- armor: 0
+  damage: 0d0+0
+  description: []
+  exp: 0
+  gold: 0
+  hit: 0d0+0
+  id: 101
+  keywords:
+  - mob
+  - mobi
+  - act
+  level: 1
+  longdesc:
+  - An Act Mob is here, but can not be seen by Pre-Auths.
+  programs:
+  - commands:
+    - mpechoat $n Your eyes are quickly drawn to the tapestries.
+    - mpforce 0.$n look tapestries
+    name: act
+    qualifier: arrives from below.~
+  - commands:
+    - mpechoat $n Your eyes are quickly drawn to the tapestries.
+    - mpforce 0.$n look tapestries
+    name: act
+    qualifier: flys in from below.~
+  shortdesc: Act Mob
+  thac0: 0
+- armor: 0
+  damage: 0d0+0
+  description:
+  - This is a man who eyes speak volumes, mostly of knowledge and friendship.
+  - Most dwarves are distrustful of strangers, but this one seems to thrive
+  - on greeting and teaching the new travelers into these Realms.  His face
+  - is covered in wrinkles, both from the sun and smiling.  His chin sprouts
+  - a proud goatee, and his clothes are bright to the point of being gaudy.
+  - His boots are a black leather, polished to a shine.  Overall, he makes
+  - quite a striking picture.
+  exp: 0
+  gold: 0
+  hit: 0d0+0
+  id: 102
+  keywords:
+  - Xouwasi
+  - dwarven
+  - dwarf
+  - man
+  - teacher
+  level: 1
+  longdesc:
+  - The statistics teacher sits here, guiding you towards your future.
+  programs:
+  - commands:
+    - bow $n
+    - '  say You appear to be a visitor, $n.'
+    - '  mpechoat $n - Type "look <item>" or "look <name>" to see things here.'
+    - '  mpechoat $n - Type ''eq'' to check your equipment (items you are wearing).'
+    - '  mpechoat $n ... to see your unused belongings, type ''inventory'' or ''i'''
+    - '  mpechoat $n ... to display your statistics sheet, type ''score'' or ''ol'''
+    - '  say Type ''look tree''...'
+    name: act
+    qualifier: from the south.~
+  shortdesc: Xouwasi
+  thac0: 0
+- armor: 75
+  damage: 0d0+0
+  description:
+  - A scaly, slimy serpent, so black it shines.  Its beady eyes watch your every
+  - movement, looking for an opening to strike!
+  exp: 0
+  gold: 500
+  hit: 1d1+25
+  id: 103
+  keywords:
+  - serpent
+  - snake
+  level: 3
+  longdesc:
+  - A serpent springs from a coil deep within the grass and strikes!
+  programs:
+  - commands:
+    - mpechoat $n $I sinks its fangs painfully into your flesh!
+    - mpechoaround $n $I sinks its fangs into $n's flesh!
+    name: fight
+    qualifier: 50~
+  - commands:
+    - mpoload 108 1
+    - mpechoat $n A piece of meat is torn from the serpent as it dies.
+    name: death
+    qualifier: 100~
+  shortdesc: a serpent
+  thac0: 0
+- armor: 75
+  damage: 0d0+0
+  description:
+  - The head of this dragon is identical to the one you viewed earlier, the
+  - difference being that this one is (thankfully) only about tenth the size.
+  - This dragon, though a baby, looks like a tough battle indeed.
+  exp: 0
+  gold: 1000
+  hit: 20d0+0
+  id: 104
+  keywords:
+  - dragon
+  - hatchling
+  level: 2
+  longdesc:
+  - A dragon hatchling peers at you, huge and darkly menacing.
+  programs:
+  - commands:
+    - mpe The dragon gives a deep rumbling growl, just to let you know he is here.
+    - sac corpse
+    - sac shield
+    - sac bucket
+    name: rand
+    qualifier: 7~
+  - commands:
+    - mpoload 112 1
+    - mpecho $I snarls as thick blood fills its throat and it collapses.
+    - mpecho A loud crack can be heard in the shadows against the southern wall.
+    - mpecho A new dragon hatchling emerges from inside a hidden egg.
+    - mpmload 104
+    - mpechoat $n Remember...
+    - mpechoat $n You cannot advance beyond level 1 until you have passed the
+    - mpechoat $n runed gate and entered the actual game.
+    name: death
+    qualifier: 100~
+  shortdesc: the dragon hatchling
+  thac0: 0
+- armor: 0
+  damage: 0d0+0
+  description: []
+  exp: 0
+  gold: 0
+  hit: 0d0+0
+  id: 105
+  keywords:
+  - mob
+  - mobii
+  - act
+  level: 1
+  longdesc:
+  - An Act Mob is here, but can not be seen by Pre-Auths.
+  programs:
+  - commands:
+    - mpoload 113 1
+    - mpoload 114 1
+    - mpat 120 give armour Quercusi
+    - mpat 120 give golden Quercusi
+    - mpoload 116 1
+    - mpoload 117 1
+    - mpat 123 mppurge
+    - mpat 123 drop box
+    - mpat 123 put token box
+    - mpat 123 close box
+    name: act
+    qualifier: arrives from the west.~
+  - commands:
+    - mpoload 113 1
+    - mpoload 114 1
+    - mpat 120 give armour Quercusi
+    - mpat 120 give golden Quercusi
+    - mpoload 116 1
+    - mpoload 117 1
+    - mpat 123 mppurge
+    - mpat 123 drop box
+    - mpat 123 put token box
+    - mpat 123 close box
+    name: act
+    qualifier: flys in from the west.~
+  - commands:
+    - mpat 199 drop all
+    name: rand
+    qualifier: 2~
+  shortdesc: Act Mob
+  thac0: 0
+- armor: 0
+  damage: 0d0+0
+  description:
+  - This man looks like he has been in the Realms for hundreds of years.
+  - His kind and friendly face is wrinkled with time, yet he appears to
+  - be in top physical shape, and his eyes sparkle with wit and wisdom.
+  exp: 0
+  gold: 0
+  hit: 0d0+0
+  id: 106
+  keywords:
+  - Quercusi
+  - Q
+  - man
+  level: 50
+  longdesc:
+  - A wise man is here, rocking himself on a beautiful chair.
+  programs:
+  - commands:
+    - mpat 119 mpecho $I leans out the door...
+    - mpat 119 give key $n
+    - mpat 119 give armour $n
+    - mpat 119 mpechoat $n Good luck in your adventures, $n...
+    - close door
+    name: act
+    qualifier: leaves north.~
+  - commands:
+    - mpechoat $n I shall now return you to Xouwasi at the tree.
+    - mpechoaround $n $n disappears in a magical flash.
+    - mptransfer 0.$n 103
+    - mpat 103 mpforce 0.$n south
+    - mpjunk lightring
+    name: give
+    qualifier: ring light lightring~
+  - commands:
+    - mpat 119 mpecho $I leans out the door...
+    - mpat 119 give key $n
+    - mpat 119 give armour $n
+    - mpat 119 mpechoat $n Good luck in your adventures, $n...
+    - close door
+    name: act
+    qualifier: flys north.~
+  - commands:
+    - mpechoat $n I shall now return you to Xouwasi at the tree.
+    - mpechoaround $n $n disappears in a magical flash.
+    - mptransfer 0.$n 103
+    - mpat 103 mpforce 0.$n south
+    - mpjunk shadowring
+    name: give
+    qualifier: ring shadow shadowring~
+  - commands:
+    - mpat 199 drop all
+    - mpat 199 get armour
+    - mpat 199 get armour
+    - mpat 199 get key
+    - mpat 199 get key
+    - mpat 199 get key
+    - mpat 199 get key
+    - mpat 199 get armour
+    - mpat 199 get armour
+    - mpat 199 mppurge
+    name: rand
+    qualifier: 2~
+  - commands:
+    - mpat 119 mpecho $I leans out the door...
+    - mpat 119 give key $n
+    - mpat 119 give armour $n
+    - mpat 119 mpechoat $n Good luck in your adventures, $n...
+    - close door
+    name: act
+    qualifier: floats north.~
+  shortdesc: Quercusi
+  thac0: 0
+- armor: 0
+  damage: 0d0+0
+  description: []
+  exp: 0
+  gold: 0
+  hit: 0d0+0
+  id: 107
+  keywords:
+  - mob
+  - mobiii
+  - act
+  level: 1
+  longdesc:
+  - An Act Mob is here, but can not be seen by Pre-Auths.
+  programs:
+  - commands:
+    - mpechoat $n High overhead you hear a large bell thunder in response.
+    - mpechoaround $n High overhead, a large bell thunders in response.
+    - mpechoat $n If nothing happens, type LOOK ROPE, and pull again in 30 seconds.
+    - mpapplyb $n
+    - push rope
+    name: act
+    qualifier: pulls a rope.~
+  shortdesc: Act Mob
+  thac0: 0
+- armor: 0
+  damage: 0d0+0
+  description: []
+  exp: 0
+  gold: 0
+  hit: 0d0+0
+  id: 199
+  keywords:
+  - spacermob
+  level: 1
+  longdesc:
+  - Some god abandoned a newly created spacermob here.
+  shortdesc: a newly created spacermob
+  thac0: 0
+OBJECTS:
+- attributes: []
+  cost: 10
+  extra: []
+  id: 100
+  item_type: light
+  keywords:
+  - candelabra
+  longdesc:
+  - Six black candles burn brightly in this brass candelabra
+  shortdesc: a candelabra with six black candles
+  wear_flags:
+  - take
+  weight: 100
+- attributes:
+  - magic
+  cost: 10
+  extra: []
+  id: 101
+  item_type: fountain
+  keywords:
+  - spring
+  longdesc:
+  - A magical spring sprinkles water from the corner of the room.
+  shortdesc: a magical spring
+  wear_flags: []
+  weight: 5000
+- attributes: []
+  cost: 0
+  extra:
+  - desc:
+    - This chest is made from a thick carved oak, it is sturdy but not locked.
+    - You feel you must examine it closer to see what it might contain.
+    keywords:
+    - chest
+  id: 104
+  item_type: container
+  keywords:
+  - chest
+  longdesc:
+  - A weapons chest rests against the northern wall.
+  shortdesc: a weapon's chest
+  wear_flags: []
+  weight: 0
+- attributes:
+  - magic
+  cost: 0
+  extra:
+  - desc:
+    - This weapon looks to be of decent quality and should serve you well in your
+    - upcoming battles.
+    keywords:
+    - dagger
+  id: 105
+  item_type: weapon
+  keywords:
+  - Weapon
+  longdesc:
+  - You see a finely honed dagger here.
+  shortdesc: A finely honed weapon lies here, waiting to be carried into battle.
+  wear_flags:
+  - wield
+  weight: 2
+- attributes:
+  - magic
+  cost: 0
+  extra:
+  - desc:
+    - This ring is a symbol of your chosen peaceful nature.  It will aid you
+    - until you reach level 10.  May it always find you in good health.
+    keywords:
+    - ring
+    - light
+  id: 106
+  item_type: armor
+  keywords:
+  - ring
+  - light
+  - lightring
+  longdesc:
+  - A small circle of light lies here.
+  shortdesc: a ring of light
+  wear_flags:
+  - take
+  - finger
+  weight: 2
+- attributes:
+  - magic
+  cost: 0
+  extra:
+  - desc:
+    - This ring is a symbol of your chosen deadly nature.  It will aid you until
+    - you reach level 10.  May it always find you in good health and fast reflex.
+    keywords:
+    - ring
+    - shadows
+  id: 107
+  item_type: armor
+  keywords:
+  - ring
+  - shadow
+  - shadowring
+  longdesc:
+  - A small circle of shadows lies here.
+  shortdesc: a ring of shadows
+  wear_flags:
+  - take
+  - finger
+  weight: 2
+- attributes:
+  - organic
+  cost: 0
+  extra: []
+  id: 108
+  item_type: food
+  keywords:
+  - snakemeat
+  - snake
+  - meat
+  longdesc:
+  - A piece of meat from a snake
+  shortdesc: a piece of meat
+  wear_flags:
+  - take
+  weight: 0
+- attributes:
+  - magic
+  - organic
+  - deathrot
+  cost: 0
+  extra:
+  - desc:
+    - Rather heavy for a feather, it looks to actually be a wand of sorts.  Perhaps
+    - you should hold it and zap <target>.  Because this feather contains an attack
+    - spell, this is NOT something you would want to cast on another player, unless
+    - you are both pkill characters.
+    keywords:
+    - feather
+    - purple
+  id: 109
+  item_type: wand
+  keywords:
+  - feather
+  - purple
+  longdesc:
+  - A bright purple feather lies here.
+  shortdesc: a purple feather
+  wear_flags:
+  - take
+  - hold
+  weight: 4
+- attributes:
+  - metal
+  cost: 0
+  extra:
+  - desc:
+    - This is a sturdy bucket made to store drinking water.  You can 'drink tin'
+    - or 'drink water'.  You may refill the bucket at fountains or streams by
+    - typing 'fill bucket'.
+    keywords:
+    - tin
+    - bucket
+  id: 110
+  item_type: drinkcon
+  keywords:
+  - bucket
+  - water
+  - tin
+  longdesc:
+  - A bucket full of water sits here, waiting for someone to carry it away.
+  shortdesc: a tin bucket
+  wear_flags:
+  - take
+  weight: 4
+- attributes:
+  - prototype
+  cost: 0
+  extra:
+  - desc:
+    - The waters are shallow and clear, and surprisingly cold.  Several varieties
+    - of fish swim beneath the surface, but you can best make out a pool of lapis-
+    - toned fish.  You have no doubt you can drink from this water source, and may
+    - wish to fill your water bucket before continuing your journey.
+    keywords:
+    - pond
+  id: 111
+  item_type: fountain
+  keywords:
+  - pond
+  longdesc:
+  - A shallow pond of crystal clear water
+  shortdesc: the pond
+  wear_flags: []
+  weight: 0
+- attributes:
+  - dark
+  - organic
+  cost: 0
+  extra:
+  - desc:
+    - This shield shall protect you well in your travels.  Wear it in good health.
+    keywords:
+    - shield
+    - dragonscales
+    - scales
+  id: 112
+  item_type: armor
+  keywords:
+  - shield
+  - dragonscales
+  - scales
+  longdesc:
+  - A shield of scales lie here, marred with deep burns.
+  shortdesc: a shield of dragonscales
+  wear_flags:
+  - take
+  - shield
+  weight: 5
+- attributes: []
+  cost: 0
+  extra: []
+  id: 113
+  item_type: armor
+  keywords:
+  - armour
+  - breast
+  - plate
+  longdesc:
+  - A breast plate lies here, unused and forgotten.
+  shortdesc: a thick plate of breast armour
+  wear_flags:
+  - take
+  - body
+  weight: 10
+- attributes: []
+  cost: 0
+  extra:
+  - desc:
+    - This key looks to open something very important. Maybe the gate to
+    - your future. To use a key, just UNLOCK <door>. Like UNLOCK GATE.
+    keywords:
+    - golden
+    - key
+  id: 114
+  item_type: key
+  keywords:
+  - key
+  - golden
+  longdesc:
+  - A large golden key lies here, it looks to open something important.
+  shortdesc: a huge golden key
+  wear_flags:
+  - take
+  weight: 0
+- attributes:
+  - organic
+  cost: 0
+  extra:
+  - desc:
+    - If you are ready to pass beyond the Spectral Gates, you need only pull this
+    - rope to notify the Immortals that you are ready to enter the game!
+    - ''
+    - If your name has been approved, you will be sent into the actual game.
+    - ''
+    - If you receive a message stating your name has been denied by the Immortals,
+    - 'you must choose a NEW, original medieval name.  To do this, you type:'
+    - ''
+    - '"name <newname>"                 For example:  name Tsythia'
+    - ''
+    - Then pull the rope to announce your new name to the Immortals.  Give them
+    - about 30 seconds to approve or deny the new name.  If you have not gotten
+    - a response, pull the rope again.
+    - ''
+    - The rope is on a 30 second timer, meaning you can pull it as often as you
+    - wish, but the Immortals will only be notified once every 30 seconds.  The
+    - Immortals are often busy and may not see you the first time around, so
+    - please be patient - one will be with you as quickly as possible.
+    keywords:
+    - rope
+  id: 115
+  item_type: lever
+  keywords:
+  - rope
+  longdesc:
+  - A rope hangs from high above, waiting to be pulled.
+  shortdesc: a rope
+  wear_flags: []
+  weight: 0
+- attributes: []
+  cost: 0
+  extra: []
+  id: 116
+  item_type: container
+  keywords:
+  - box
+  longdesc:
+  - A blackened wooden box sets in the shadows atop a small table.
+  shortdesc: the box
+  wear_flags:
+  - take
+  weight: 1100
+- attributes:
+  - glow
+  - magic
+  cost: 0
+  extra: []
+  id: 117
+  item_type: armor
+  keywords:
+  - earring
+  - token
+  longdesc:
+  - An earring lies here, tarnished and forgotten.
+  shortdesc: a token of a Goddesses affection
+  wear_flags:
+  - take
+  - ears
+  weight: 5
+- attributes: []
+  cost: 0
+  extra: []
+  id: 119
+  item_type: armor
+  keywords:
+  - gownq
+  longdesc:
+  - Some god dropped a newly created gown here.
+  shortdesc: a flowing white gown
+  wear_flags:
+  - take
+  - body
+  weight: 0
+- attributes:
+  - glow
+  cost: 0
+  extra:
+  - desc:
+    - The Gods hope your stay on the game will be a pleasant one.  However,
+    - to insure the enjoyment of others, there are two major Rules which you
+    - 'should be made aware of:'
+    - ''
+    - 1) Thou shalt neither attack nor steal from a player who has chosen
+    - '   Non-Pkill Status.  Thou shalt not engage in pkill as long as you'
+    - '   remain peaceful.'
+    - 2) Thou shalt not spam, use profanity, harass, nor make either lewd
+    - '   or racial comments on any channel, nor to any other player.'
+    keywords:
+    - sign
+  id: 120
+  item_type: furniture
+  keywords:
+  - peaceful
+  - sign
+  longdesc:
+  - A large sign floats before the trees alongside the pathway.
+  shortdesc: the sign of the peaceful path
+  wear_flags: []
+  weight: 0
+- attributes:
+  - dark
+  cost: 0
+  extra:
+  - desc:
+    - The Gods hope your stay on the game will be a pleasant one.  However,
+    - to insure the enjoyment of others, there are two major rules which you
+    - 'should be made aware of:'
+    - ''
+    - 1) Thou shalt neither attack nor steal from a player who has chosen
+    - '   Non-Pkill Status.  Thou shalt only attack other pkillers within'
+    - '   five levels of your own.'
+    - 2) Thou shalt not spam, use profanity, harass, nor make either lewd
+    - '   or racial comments on any channel, nor to any other player.'
+    - ''
+    - Also, often review HELP RULES PKILL for rule changes that affect you.
+    keywords:
+    - sign
+  id: 121
+  item_type: furniture
+  keywords:
+  - deadly
+  - sign
+  longdesc:
+  - A large sign floating alongside the pathway demands your attention.
+  shortdesc: the sign of the deadly path
+  wear_flags: []
+  weight: 0
+- attributes: []
+  cost: 0
+  extra:
+  - desc:
+    - 'To use this sack, type:  examine sack   OR   exam sack'
+    - 'To get items from this sack, type:  get <item name> sack'
+    - 'To put an item in this sack, type:  put <item name> sack'
+    - ''
+    - You can also use get all or put all.  See help container for more information.
+    keywords:
+    - sack
+    - burlap
+  id: 123
+  item_type: container
+  keywords:
+  - sack
+  - burlap
+  longdesc:
+  - A sack made from a brown burlap lies here.
+  shortdesc: a large burlap sack
+  wear_flags:
+  - take
+  - hold
+  weight: 1
+- attributes:
+  - prototype
+  cost: 0
+  extra:
+  - desc:
+    - These staircase looks sturdy.  It descends to another room from the
+    - center of the room.
+    keywords:
+    - stairs
+    - staircase
+  id: 124
+  item_type: trash
+  keywords:
+  - stairs
+  longdesc:
+  - A spiral staircase leads down from center of the room.
+  shortdesc: a staircase
+  wear_flags: []
+  weight: 0
+- attributes:
+  - dark
+  - magic
+  cost: 0
+  extra:
+  - desc:
+    - Of rough but usable quality, it should serve you well in your early years.
+    keywords:
+    - menacing
+    - granitic
+    - blade
+  id: 125
+  item_type: weapon
+  keywords:
+  - menacing
+  - granitic
+  - blade
+  longdesc:
+  - A blade of metallic stone protrudes from a leather-wrapped hilt.
+  shortdesc: a menacing granitic blade
+  wear_flags:
+  - take
+  - wield
+  weight: 2
+- attributes:
+  - hum
+  - magic
+  - bless
+  - metal
+  cost: 0
+  extra:
+  - desc:
+    - Forged of a gleaming metal, this mace will serve you well in your early years.
+    keywords:
+    - adamantium
+    - mace
+  id: 126
+  item_type: weapon
+  keywords:
+  - adamantium
+  - mace
+  longdesc:
+  - A mace of brightly gleaming metal hums with inner power.
+  shortdesc: a gleaming adamantium mace
+  wear_flags:
+  - take
+  - wield
+  weight: 2
+- attributes:
+  - magic
+  - metal
+  cost: 0
+  extra:
+  - desc:
+    - Made of a heavy iron alloy, it will serve you well in your early years.
+    keywords:
+    - broadsword
+    - broad
+    - sword
+  id: 127
+  item_type: weapon
+  keywords:
+  - heavy
+  - broadsword
+  - broad
+  - sword
+  longdesc:
+  - Light glints from the blade of a heavy, iron-forged broadsword.
+  shortdesc: a heavy, iron-forged broadsword
+  wear_flags:
+  - take
+  - wield
+  weight: 2
+- attributes:
+  - prototype
+  cost: 0
+  extra: []
+  id: 190
+  item_type: container
+  keywords:
+  - prog
+  - cont
+  longdesc:
+  - A container set up with the progs to make useless for non-guilded players.
+  shortdesc: a prog container
+  wear_flags:
+  - take
+  - hold
+  weight: 0
+- attributes: []
+  cost: 0
+  extra: []
+  id: 191
+  item_type: fountain
+  keywords:
+  - fountain
+  longdesc:
+  - A fountain of fresh water sits in the corner.
+  shortdesc: a fountain
+  wear_flags: []
+  weight: 0
+- attributes: []
+  cost: 0
+  extra:
+  - desc:
+    - This is an average boulder, grey and craggy.  It appears to be here
+    - merely to frame the plaque.  Type LOOK PLAQUE to read what is says.
+    keywords:
+    - boulder
+  - desc:
+    - This is a small area, about 25 rooms total.  If you are new to this type of
+    - game, you should explore these rooms, look at all you you can and collect
+    - your equipment.  You will not be authorized until you pull the rope in the
+    - final room.
+    - ''
+    - You can NOT die nor level in this area.  This gives you the chance to test
+    - your character, view your stats, review your SLIST, and read our help files.
+    - ''
+    - Here your eyes are your best weapon.  Look at everything!  You can look at
+    - items found in the room descriptions to see additional information and
+    - instructions.  Also be sure to look at actual items and mobiles <creatures
+    - of the game world> that are found in the rooms.
+    - ''
+    - Should you have any questions or comments, please feel free to talk to an
+    - Immortal over newbiechat or via tells.  Type WHO IMM to see which Immortals
+    - are currently available.  Also, type HELP NEWBIE for detailed help created
+    - for players new to the game.
+    - ''
+    - Happy Adventuring! -- The Administrators
+    keywords:
+    - golden
+    - plaque
+  id: 192
+  item_type: furniture
+  keywords:
+  - plaque
+  longdesc:
+  - To the right of the path, a plaque is imbedded in a boulder.  (look plaque)
+  shortdesc: a plaque
+  wear_flags: []
+  weight: 0
+- attributes:
+  - prototype
+  cost: 0
+  extra:
+  - desc:
+    - Welcome, Adventurers, to the Spectral Gates...
+    - All new characters enter the game in this area prior to venturing to
+    - the Darkhaven Academy and Realms beyond.  This is a small area, about
+    - 25 rooms total.  Your task is to explore these rooms, look at all you
+    - you can and collect your equipment.  You will not be authorized until
+    - you pull the rope in the final room.
+    - ''
+    - You can NOT die nor level in this area.  This gives you the chance to
+    - test your character, view your stats, review your SLIST and read our
+    - help files.
+    - ''
+    - You can look at items found in the room descriptions to see additional
+    - information.  For example, "look tapestries" will tell you things about
+    - this room and the game not obvious at first glance.  Also be sure to
+    - look at actual items and mobiles <creatures in the game> that are in
+    - the room.  Here your eyes are your best weapon.
+    - ''
+    - Happy Adventuring! -- Brittany Seccunda-DethBlayde, Godmother
+    keywords:
+    - golden
+    - plaque
+    - banister
+  id: 193
+  item_type: furniture
+  keywords:
+  - golden
+  - plaque
+  longdesc:
+  - Attached to the banister is an inscribed golden plaque.
+  shortdesc: a plaque
+  wear_flags: []
+  weight: 0
+- attributes: []
+  cost: 0
+  extra: []
+  id: 194
+  item_type: furniture
+  keywords:
+  - thedoor
+  longdesc:
+  - An opening in the tree, leading back to the path.
+  shortdesc: the opening
+  wear_flags: []
+  weight: 0
+- attributes: []
+  cost: 0
+  extra:
+  - desc:
+    - This staircase is done up completely in wrought iron.  Strange mythical
+    - creatures are depicted along the railings as the stairway spirals down
+    - through the floor.  To descend, just type DOWN or D.
+    keywords:
+    - staircase
+    - spiral
+  id: 196
+  item_type: furniture
+  keywords:
+  - spiral
+  - staircase
+  longdesc:
+  - A spiral staircase leads down from center of the room, with an inscribed
+  - ''
+  - golden plaque attached to its banister.  [look plaque]
+  shortdesc: a staircase
+  wear_flags: []
+  weight: 0
+- attributes: []
+  cost: 0
+  extra: []
+  id: 197
+  item_type: furniture
+  keywords:
+  - thingy
+  longdesc:
+  - A large, golden gate gives passage into the game.
+  shortdesc: the gate
+  wear_flags: []
+  weight: 0
+- attributes: []
+  cost: 0
+  extra:
+  - desc:
+    - Disappearing into the hillside, only the very front of the cabin can be
+    - seen.  The building looks old, yet well kept, and the door stands ajar.
+    keywords:
+    - cabin
+  id: 198
+  item_type: furniture
+  keywords:
+  - cabin
+  longdesc:
+  - A cabin of logs has been built into the hillside south of here.
+  shortdesc: the cabin
+  wear_flags: []
+  weight: 0
+- attributes: []
+  cost: 0
+  extra:
+  - desc:
+    - A truly ancient tree, with a man-made opening large enough for you to enter.
+    - 'HINT:  Type ''opening'' or ''leave opening'' to enter and leave the tree.'
+    keywords:
+    - tree
+    - opening
+  id: 199
+  item_type: furniture
+  keywords:
+  - tree
+  longdesc:
+  - Towering beside the pathway is an enormous tree, a large opening at its base.
+  shortdesc: the tree
+  wear_flags: []
+  weight: 0
+RESETS:
+- action: object
+  id: 194
+  room: 104
+- action: npc
+  id: 101
+  limit: 1
+  room: 100
+- action: npc
+  id: 100
+  limit: 1
+  room: 101
+- action: equip
+  id: 100
+  slot: 0
+- action: npc
+  id: 102
+  limit: 1
+  room: 102
+- action: object
+  id: 104
+  room: 104
+- action: put
+  container: 104
+  id: 105
+- action: door
+  id: 10
+  room: 104
+  state: open
+- action: npc
+  id: 103
+  limit: 1
+  room: 109
+- action: object
+  id: 111
+  room: 112
+- action: npc
+  id: 104
+  limit: 1
+  room: 116
+- action: npc
+  id: 105
+  limit: 1
+  room: 119
+- action: npc
+  id: 106
+  limit: 1
+  room: 120
+- action: equip
+  id: 119
+  slot: 5
+- action: door
+  id: 5
+  room: 120
+  state: locked
+- action: door
+  id: 1
+  room: 121
+  state: locked
+- action: object
+  id: 115
+  room: 122
+- action: door
+  id: 3
+  room: 122
+  state: locked
+- action: object
+  id: 199
+  room: 102
+- action: object
+  id: 198
+  room: 119
+- action: object
+  id: 197
+  room: 121
+- action: object
+  id: 192
+  room: 103
+- action: object
+  id: 120
+  room: 105
+- action: object
+  id: 121
+  room: 107
+- action: door
+  id: 4
+  room: 123
+  state: closed
+- action: object
+  id: 124
+  room: 100
+ROOMS:
+- desc:
+  - You appear somehow within an arcane chamber.  Huge hanging tapestries,
+  - each intricately detailed in vibrant colors, cover the featureless walls
+  - of your octagonal surroundings.  Wide square bands of white marble serve
+  - to blur the sharp edges of the walls, giving the room an almost circular
+  - appearance.  Gazing about your surroundings, your eye is drawn upward by
+  - a much larger round tapestry hanging directly overhead, and you struggle
+  - with your balance as you examine the fabric's images.  The growing sense
+  - of wonder which pulls at you is tinged with a dose of trepidation.  The
+  - views about you, while wondrous, are nevertheless quite ominous; these
+  - images are of a truly darkened land.
+  doors:
+  - desc:
+    - You see a spiral staircase leading to a reception room.
+    dir: down
+    keywords: []
+    to: 101
+  extended_descriptions:
+  - desc:
+    - As you peer closer at this tapestry, you find it is not a tapestry at all,
+    - but a window which looks out upon an strange and darkened land.  You begin
+    - to examine each separately, enjoying the view each affords.  Nine separate
+    - windows are here, one above you and one in each of the eight directions.
+    - LOOK North, East, South, West, Northeast, Southeast, Southwest, Northwest.
+    - Perhaps you should have a brief peek at this new world.
+    keywords:
+    - tapestry
+  - desc:
+    - To the north and west appears to be a valley and forest, probably home
+    - to the Elven population by the small structures there.  You can also
+    - make out the beginning of an ocean and a few ships at port.
+    keywords:
+    - northwest
+    - nw
+  - desc:
+    - The forest changes in this direction, the trees create a canopy over
+    - quite a large area.  South of the forest is a huge swamp area.
+    keywords:
+    - southwest
+    - sw
+  - desc:
+    - You can see a large, busy dump out this direction, and a large opening to
+    - a subterranean area there.  You can see a dark path leading south from this
+    - dump.  Altogether, it does not look like the most appealing of places for
+    - you to visit.
+    keywords:
+    - south
+    - s
+  - desc:
+    - This side looks very busy.  There is a large crossroads leading in many
+    - directions.  You see a large grove and castle far to the east.  West of
+    - the crossroads is a city gate.  You can see blackened mountains, an open
+    - abandoned looking town and caves that appear to be made for dwarves.
+    keywords:
+    - east
+    - e
+  - desc:
+    - Far above you can make out several few dragons flying though the grey
+    - skies, and even a few Harpies are out stretching their wings.  Most
+    - seem to not see this building, nor you watching their passage.
+    keywords:
+    - up
+    - u
+  - desc:
+    - As you peer closer at this tapestry, you find it is not a tapestry at all,
+    - but a window which looks out upon an strange and darkened land.  You begin
+    - to examine each separately, enjoying the view each affords.  Nine separate
+    - windows are here, one above you and one in each of the eight directions.
+    - LOOK North, East, South, West, Northeast, Southeast, Southwest, Northwest.
+    - Perhaps you should have a brief peek at this new world.
+    keywords:
+    - tapestrie
+  - desc:
+    - As you peer closer at this tapestry, you find it is not a tapestry at all,
+    - but a window which looks out upon an strange and darkened land.  You begin
+    - to examine each separately, enjoying the view each affords.  Nine separate
+    - windows are here, one above you and one in each of the eight directions.
+    - LOOK North, East, South, West, Northeast, Southeast, Southwest, Northwest.
+    - Perhaps you should have a brief peek at this new world.
+    keywords:
+    - tapestries
+  - desc:
+    - Outside you see a large field leading to the base of a large mountain,
+    - above which floats a radiant city dominated by a palatial structure.
+    keywords:
+    - north
+    - n
+  - desc:
+    - Far to the north and east you see a large city surrounded by verdant
+    - fields.  In the east of this city rises a huge citadel of gold.
+    keywords:
+    - northwest
+    - ne
+  - desc:
+    - You can make out a guarded city gate in this direction.  North of the
+    - gate is a small forest, inhabited by many small pixies.  Farther west
+    - and north is a large town.  Straight west is a huge tree which seems
+    - to stop the path at its base.
+    keywords:
+    - west
+    - w
+  - desc:
+    - In this direction you see what appears to be a boathouse on a river.
+    - The river seems to head from east to west, emptying to a large ocean.
+    keywords:
+    - southeast
+    - se
+  - desc:
+    - The forest changes in this direction, the trees create a canopy over
+    - quite a large area. South of the forest is a huge swamp area.
+    keywords:
+    - southwest
+    - sw
+  - desc:
+    - Far to the north and east, you see a large city surrounded by verdant
+    - fields. To the east of the city is a huge golden castle.
+    keywords:
+    - northeast
+  - desc: []
+    keywords:
+    - '''tapestry'
+  id: 100
+  name: Ominous Tapestries
+- desc:
+  - Muted sounds and the scent of cedar assail your senses as you enter this
+  - stately chamber.  Thick carpeting competes with leathered chairs in a bid
+  - for your comfort, and a huge painting of a barren desert occupies the wall
+  - behind a large desk of oak.  Four small luminescent globes float aimlessly
+  - about the room, and you notice that though seemingly free floating these
+  - globes always manage to remain equidistant from one another.  The huge
+  - bust of a fantastical lizard has been set upon the wall, an amazing
+  - hunting trophy of some sort.
+  doors:
+  - desc:
+    - Before you is a path past a giant tree.
+    dir: north
+    keywords: []
+    to: 102
+  - desc:
+    - Up a spiral staircase is a observation tower, overlooking the Realms.
+    dir: up
+    keywords: []
+    to: 100
+  extended_descriptions:
+  - desc:
+    - The walls here are made from the finest cedar, giving the room a luxurious
+    - look and a fantastic smell.  Someone went to great expense and searching to
+    - find these strips of perfectly matched wood.
+    keywords:
+    - cedar
+  - desc:
+    - This carpet appears to be made from a cashmere wool laid atop some sort of
+    - thick padding.  Your feet sink at least an inch into the flooring.
+    keywords:
+    - carpet
+    - carpeting
+  - desc:
+    - Done on a stretched scroll in vivid, detailed colors, it looks almost as if
+    - you could step into the painting (though it is a barren desert and does not
+    - appear to be somewhere you would want to visit).
+    keywords:
+    - painting
+  - desc:
+    - These walls are made from a fine sample of cedar, decorative enough to
+    - require little in the way of painting and other decoration.  One painting
+    - 'adorns the wall behind the beautiful oak desk:  a painting of a barren'
+    - desert, hauntingly vivid, almost as if you could step directly into it.
+    keywords:
+    - wall
+    - walls
+  - desc:
+    - Each globe winks with an internal light, though not a flame or any sort of
+    - thing you can define by past experiences.  They dangle in mid air with no
+    - means of support.  Magic comes to mind, but you shrug it off.
+    keywords:
+    - globes
+    - globe
+  - desc:
+    - Your mind clicks!  You know what this is, though your mind takes a moment
+    - to digest the information.  You are staring at a bust of a dragon, closer
+    - to such a thing than you have ever been before.  Its eyes seem to glare
+    - menacingly at you, but a shiver courses the length of your spine as a
+    - sigh of relief passes your lips.  It is thankfully dead, and you are safe.
+    keywords:
+    - bust
+    - trophy
+    - lizard
+  - desc:
+    - Each of these chairs are made from the finest of leathers, polished to a
+    - high sheen and dyed a midnight black.  This is by far the best craftsmanship
+    - you have ever seen, and as you approach you can smell the rich scent given
+    - off by fresh leather.
+    keywords:
+    - chair
+    - chairs
+    - leather
+  - desc:
+    - This desk is made from a carved oak wood, stained to a dark brown finish.
+    - The crafting is done so that the legs appear to be clawed feet on the end
+    - of slightly bent legs.  The craftwork is excellent.
+    keywords:
+    - oak
+    - desk
+  id: 101
+  name: An Unsettling Reception
+- desc:
+  - You travel upon an open pathway beyond the confines of the reception area
+  - to the south, heading toward your future.  After a time, you see a stocky
+  - man leaning casually against a large tree to the side of road.  Your path
+  - leads on to the north, or you can return to the structure to the south.
+  doors:
+  - desc:
+    - The path divides north of here.
+    dir: north
+    keywords: []
+    to: 103
+  - desc:
+    - To the south is the reception area.
+    dir: south
+    keywords: []
+    to: 101
+  - desc: []
+    dir: somewhere
+    keywords:
+    - opening
+    to: 104
+  extended_descriptions:
+  - desc:
+    - This tree is huge! On the southern face you see a large opening, it
+    - appears big enough for you to enter. You wonder what is inside.
+    - 'HINT: Type OPENING or LEAVE OPENING to enter and leave the tree.'
+    keywords:
+    - tree
+  - desc:
+    - Somewhere is an exittype that you use for non-direction exits.
+    - They are entered using a "codeword", usually preceeded by
+    - leave, climb, or enter. This somewhere is used by typing
+    - either LEAVE OPENING or OPENING alone.
+    keywords:
+    - somewhere
+  id: 102
+  name: The Path of Knowledge
+- desc:
+  - Do you wish to spend your time watching over your shoulder, hiding in the
+  - shadows, killing and being killed by other players?
+  - ''
+  - Pkill -- that is the decision you must make here.  If you so choose to walk
+  - the path of shadows, killing and stealing from other players, you should be
+  - aware that you may never again walk the path of light.  Once deadly, always
+  - deadly.  As a deadly character you will be the potential victim all other
+  - pkillers within FIVE levels (higher or lower) of your own.  You do not have
+  - to decide to become pkill at this moment; you may embark upon that path at
+  - any time in the future by requesting Immortal assistance, or by joining a
+  - clan.  Both 'HELP RULES PKILL' and 'HELP RULES ASSIST' contain information
+  - important to pkill players.  The gods forbid peaceful players to give much
+  - in the way of assistance to pkillers.
+  - ''
+  - '- If you have read this and would like to walk the path of the deadly, type:'
+  - '"say I choose to walk on the shadowy path of the pkillers."'
+  - ''
+  - '- If you have read this and would like to remain on the peaceful path, type:'
+  - '"say I choose to walk on the lighted path of the peaceful."'
+  doors:
+  - desc:
+    - Behind you is a path by the leading back to the reception area.
+    dir: south
+    keywords: []
+    to: 102
+  extended_descriptions: []
+  id: 103
+  name: A Path Divided
+- desc:
+  - This is a small house, sparsely decorated.  It looks as if the dwarf who
+  - resides here prefers to spend all his time outside rather then indoors.
+  - The table is covered with a few dishes and the bed is unmade, though the
+  - rest of the place is relatively clean.  Against the north wall you see a
+  - large chest.  Upon closer inspection you see the chest is open, and you
+  - wonder what it might contain.  The opening is back to the south.
+  doors:
+  - desc: []
+    dir: somewhere
+    keywords:
+    - opening
+    to: 102
+  extended_descriptions:
+  - desc:
+    - A small wooden table, only large enough to seat two.  There are a few
+    - plates and food pieces left here, and the only thing of note is that
+    - the dinnerware is made of wood.
+    keywords:
+    - table
+  - desc:
+    - These dishes are made from a rough-finished pottery.  They look only
+    - finished by fire, cooked to a brittle hardness.  They were definitely
+    - made for use rather than appearance.
+    keywords:
+    - dishes
+  - desc:
+    - Shorter than one that many would find comfortable, it is made with a
+    - wooden frame and a mattress of feathers in a cotten fabric.  The
+    - blankets are woolen and look warm, if not decorative.
+    keywords:
+    - bed
+  - desc:
+    - The opening leaves out the south of this room.  To use this type of exit,
+    - type LEAVE OPENING or OPENING alone.  This is the way to return to the
+    - path to the new world.
+    keywords:
+    - opening
+  id: 104
+  name: Inside the Tree
+- desc:
+  - The path here is bright, glowing.  The trees on the sides are full and
+  - green, the grass thick and flowing, and you realize how lush this path
+  - is and how full of life it feels.  A large sign floats before a tree
+  - on the eastern side of the path.
+  doors:
+  - desc:
+    - Before you is an adventure, are you ready to embrace it?
+    dir: north
+    keywords: []
+    to: 106
+  extended_descriptions: []
+  id: 105
+  name: The Path of the Peaceful
+- desc:
+  - The path continues here, the trees growing fuller and the pathway lighter.
+  - You notice a parting ahead, towards the north.  Beyond this parting lies
+  - an open field, a joining of the two paths at which you see a small round
+  - piece of metal.  You can pick it up as you head north.
+  doors:
+  - desc:
+    - Before you is a large, open field.
+    dir: north
+    keywords: []
+    to: 109
+  extended_descriptions: []
+  id: 106
+  name: A Lighted Path
+- desc:
+  - The path here is dark, shadowy.  The trees alongside look skeletal, the
+  - grass lays a dull brown, and you realize how lonely this path may prove
+  - to be.  A large sign floats before the trees on the eastern pathside.
+  doors:
+  - desc:
+    - Before you is an adventure, are you ready to embrace it?
+    dir: north
+    keywords: []
+    to: 108
+  extended_descriptions: []
+  id: 107
+  name: The Path of the Deadly
+- desc:
+  - Your travels continue, the trees growing thinner and the pathway darker.
+  - You notice a parting ahead, towards the north.  Beyond the parting lies
+  - an open field, a joining of the two paths, and at this joining you see
+  - a small round piece of metal.  You can pick it up as you head north.
+  doors:
+  - desc:
+    - Before you is a large, open field.
+    dir: north
+    keywords: []
+    to: 109
+  extended_descriptions: []
+  id: 108
+  name: A Shadowy Path
+- desc:
+  - You find yourself in a grassy valley.  Mountains enclose you on all sides,
+  - and a forest lies ahead to the northwest.  Miniature daisies and clover are
+  - strewn about the field like a fine dusting of snow.  As you scan about your
+  - surroundings, you stop with a start.  The path you have just traversed has
+  - disappeared, leaving behind no trace of its remains.  The trees are thick
+  - and impenetrable, removing your choices on ways to proceed.  There is no
+  - turning back; the only direction is forward, further into this new world.
+  doors:
+  - desc:
+    - Leading away from this field is a path through a circle of trees.
+    dir: northwest
+    keywords: []
+    to: 110
+  extended_descriptions: []
+  id: 109
+  name: Through the Field
+- desc:
+  - You have entered a shadowy path, surrounded with trees.  This mystical
+  - cirle engulfs you with a strange, almost magical feeling.  This clearing
+  - leaves you with a sense of safety, a sense of well being.
+  doors:
+  - desc:
+    - You see the path continues through the trees.
+    dir: west
+    keywords: []
+    to: 111
+  - desc:
+    - Behind you is a field of daisies and clovers.
+    dir: southeast
+    keywords: []
+    to: 109
+  extended_descriptions:
+  - desc:
+    - These trees seem almost to be live, thinking beings, exuding an aura of
+    - darkness and magic.  Not that they will harm you, but you sense that you
+    - would not wish to attempt to chop down any found here.
+    keywords:
+    - trees
+    - tree
+  id: 110
+  name: A Ring of Trees
+- desc:
+  - The forest opens up a bit here, without actually giving of itself to field
+  - or stream.  It is as if the forest were allowing you access to see the true
+  - beauty that lies within.  Everything you had missed before, all the sights
+  - and sounds and scents, all come to you now.  Your eyes alight upon a flock
+  - of small purple birds which flutter and flow about the area.  A feathery,
+  - light moss grows on the western side of the trees, giving off a faint,
+  - musty smell, and small beetles work industriously in the moss, moulding it
+  - into a haven from predators.  A gentle splashing sound causes your eyes to
+  - drift northward, to a small pond.
+  doors:
+  - desc:
+    - To the north the pathway passes a small pond.
+    dir: north
+    keywords: []
+    to: 112
+  - desc:
+    - To the east is a tight circle of trees.
+    dir: east
+    keywords: []
+    to: 110
+  extended_descriptions:
+  - desc:
+    - High above the trees are a group of birds, enjoying the gift of flight.
+    - These birds look like those you have experienced before, yet their coloring
+    - is shockingly different, with feathers of a vivid purple, making the seem
+    - afire when hit directly by the sunlight.
+    keywords:
+    - flock
+    - bird
+    - birds
+  - desc:
+    - This moss is the most brilliant green you can recall ever seeing.  It is
+    - thick and grows heavily on the west side of almost every tree trunk within
+    - sight.  As you peer closer you can see each is like a small city to the
+    - bugs of the forest which live and hide here to flee the predators.
+    keywords:
+    - moss
+  id: 111
+  name: Seeing the Forest through the Trees
+- desc:
+  - The forest has grudgingly given way here to a small pond of azure waters,
+  - shallow and with a crystal clarity which captures your attention.  Lithe
+  - lapis-toned fish swim about, nibbling at the various plants growing among
+  - the depths of the pond.
+  doors:
+  - desc:
+    - The path goes back through the trees to the south.
+    dir: south
+    keywords: []
+    to: 111
+  - desc:
+    - The base of a hill meets the trail to the west.
+    dir: west
+    keywords: []
+    to: 113
+  extended_descriptions: []
+  id: 112
+  name: Beside an Azure Pond
+- desc:
+  - The trees fall away here from the hill's edge, and jumbled rocks lie about
+  - like forgotten toys left behind after a day's play.  Sharp edges and jagged
+  - lines define the pathway as it wends its way upward.
+  doors:
+  - desc:
+    - East you can travel along the shore of the pond.
+    dir: east
+    keywords: []
+    to: 112
+  - desc:
+    - The trail wends its way up the hillside.
+    dir: up
+    keywords: []
+    to: 114
+  extended_descriptions:
+  - desc:
+    - The rocks here are of a slate grey or smoky black.  Neither decorative
+    - nor purposeful, they appear to have been ripped from far below the
+    - surface of the hill.
+    keywords:
+    - rock
+    - rocks
+  id: 113
+  name: A Pathway of Strewn Rock
+- desc:
+  - Shattered and blasted stone litters the hillside here.  First glance gives
+  - you the impression that this is the result of volcanic activity, but this
+  - view is rapidly displaced as you gaze upon the ravaged bones strewn along
+  - a section of the hill; a headless skeletal remains of a primitive beast.
+  - The majesty of this huge, winged creature has not been diminished by its
+  - boney state.  As you study the remains, you are amazed by the sheer size
+  - of this beast, as he must have struck true fear into the hearts of those
+  - who slew him.  Charred and shattered, hundreds of smaller bones splay
+  - across the hillside, tangible proof that this great beast fought
+  - fiercely before succumbing to its own death.
+  doors:
+  - desc:
+    - You can see a large plateau in this direction.
+    dir: east
+    keywords: []
+    to: 115
+  - desc:
+    - The path descends the hill to the south.
+    dir: down
+    keywords: []
+    to: 113
+  extended_descriptions:
+  - desc:
+    - These stones are less sharp and jagged than those lower on the hill, but
+    - definitely more ravaged.  It appears as if they have been applied to very
+    - high temperatures that smoothed and blackened their exteriors.
+    keywords:
+    - stone
+    - stones
+  - desc:
+    - The bones here fit together to paint a vivid picture of a large battle -
+    - man against beast.  The men took losses of their own before the beast was
+    - defeated.  The bones of this creature appear to stretch a good twenty men
+    - long, from neck-top to the tip of its tail, and you can imagine the size
+    - of the missing skull.  Your mind wanders back to the reception area, to
+    - the bust on the wall...
+    keywords:
+    - bone
+    - bones
+  id: 114
+  name: Upon a Desolate Hillside
+- desc:
+  - Burnt and dessicated ground gives way, grudgingly, to a grassy plateau.
+  - Low hanging clouds obscure your view of the surrounding countryside, with
+  - the only visible landmark being a tall tower to the southwest, piercing
+  - through the clouds and disappearing skyward.  Pathways lead off down the
+  - hillside to the east and west, and deep, intermittent rumblings come from
+  - nearby.  Glancing southward you see the likely source - the dark opening
+  - of a cave mouth.
+  doors:
+  - desc:
+    - The greener grass on the other side of the hill.
+    dir: east
+    keywords: []
+    to: 117
+  - desc:
+    - You stand before the darkened mouth of a cave.
+    dir: south
+    keywords: []
+    to: 116
+  - desc:
+    - Back down the desolate hillside.
+    dir: west
+    keywords: []
+    to: 114
+  extended_descriptions: []
+  id: 115
+  name: Cresting the Hill
+- desc:
+  - Large and darkly shadowed, the uneven form of the walls makes it difficult
+  - to determine the extent of this cave.  Strange shards litter the floor of
+  - the cavern, and fresh marks gouged into the ground in and around these
+  - 'shards help you to determine just what they are:  remnants of a recently'
+  - hatched egg of such enormous proportions the leathery pieces fill you with
+  - a growing dread and caution.  Looking about with care, you easily discover
+  - the skeletal remains of many humanoid creatures.  This barely has time to
+  - register before a sharp rumbling causes you to look up suddenly.
+  doors:
+  - desc:
+    - North is the path to your future.
+    dir: north
+    keywords: []
+    to: 115
+  extended_descriptions: []
+  id: 116
+  name: Inside the Cavern
+- desc:
+  - Green and lush, the grass grows freely along the pathway here as this side
+  - of the hill was somehow spared the ravages of the battle which took place
+  - on its southern front.  A feeling of safety comes over you as you wend
+  - your way along, as though you yourself had avoided some great danger.
+  doors:
+  - desc:
+    - North is the entrance to a valley.
+    dir: north
+    keywords: []
+    to: 118
+  - desc:
+    - You see a plateau on the hill.
+    dir: west
+    keywords: []
+    to: 115
+  extended_descriptions: []
+  id: 117
+  name: Descending the Hillside
+- desc:
+  - Here the hillside fades gently into a valley of verdant grass, filled with
+  - flowering thistle.  The soft sound of the wind through the grass, the scent
+  - of flowers on the air, all combine to give a feeling of accomplishment and
+  - expectation... as though you are quickly approaching some indefinable goal.
+  doors:
+  - desc:
+    - You see a path through the valley and a small wooden cabin.
+    dir: east
+    keywords: []
+    to: 119
+  - desc:
+    - A path leading up the side of a hill.
+    dir: south
+    keywords: []
+    to: 117
+  extended_descriptions: []
+  id: 118
+  name: Edge of a Verdant Valley
+- desc:
+  - Tall, sheer mountains hug this small valley like overprotective parents
+  - keeping the ravages of the world at bay, and lending a peaceful feel to
+  - this place.  The very air seems to hold itself in hushed reverence.
+  - Glancing to the south, you see a small wooden cabin built into the face
+  - of the hill.
+  doors:
+  - desc:
+    - A door to into a cabin
+    dir: south
+    keywords:
+    - door
+    to: 120
+  - desc:
+    - Back towards the valley entrance.
+    dir: west
+    keywords: []
+    to: 118
+  - desc:
+    - The path ends before a large gate
+    dir: northeast
+    keywords: []
+    to: 121
+  extended_descriptions:
+  - desc:
+    - This cabin looks like it melds with the surrounding hillside, a
+    - pleasant mix of wood and stone making this attractive home. The
+    - door is closed, but unlocked. You can OPEN DOOR and go inside.
+    keywords:
+    - cabin
+  - desc:
+    - This door is made of a solid wood. It looks more to keep the weather
+    - at bay than to prevent entry, the door is closed but unlocked. You
+    - may OPEN DOOR to enter.
+    keywords:
+    - door
+  id: 119
+  name: A Valley Pass
+- desc:
+  - Various scents assail you as you enter the cabin.  The smell of cooked meats
+  - is overlaid with the scents of a crackling fire and the gentle tang of pine.
+  - Simple, well-made furniture adorns this well kept home.  As your eyes move
+  - about, enjoying the rustic comfort of your surroundings, the gentle sound
+  - of a rocking chair intrudes upon your reverie.
+  doors:
+  - desc:
+    - Back to the valley pathway
+    dir: north
+    keywords:
+    - door
+    to: 119
+  - desc: []
+    dir: down
+    keywords:
+    - trap
+    - trapdoor
+    to: 123
+  extended_descriptions:
+  - desc:
+    - This rocking chair is made of a supple wood, bent and twisted rather than
+    - carved.  It is finished with a light brown stain, highlighting the natural
+    - grain in the wood.  The chair is placed on top of a hand braided rug, done
+    - in an intricate design.  The south corner of the rug appears to be caught
+    - on something.
+    keywords:
+    - rocking
+    - chair
+  - desc:
+    - This rug is done in a design that appears to be a six-sided star weaved in
+    - and out of a series of circles.  It is like a large Gods Eye light catcher,
+    - the design pulls you deep into its pattern.  The decoration is so intense
+    - you almost miss a crack pinning a small portion of the southern corner.
+    keywords:
+    - rug
+  - desc:
+    - The corner of the rug is caught slightly caught what at first appears to
+    - be two floorboards.  Upon closer review, you see the crack is actually the
+    - frame to some type of trap door in the flooring.  As you pull back the rug,
+    - you notice a large keyhole.  This is very interesting indeed!
+    keywords:
+    - crack
+    - corner
+  - desc:
+    - As you examine them, you notice a crack which has snagged part of the rug.
+    keywords:
+    - floorboards
+    - floorboard
+  id: 120
+  name: Inside a Small Cabin
+- desc:
+  - The dense mountains, almost impassable to begin, here bring the pathway to
+  - a sheer end.  Tall bluffs rising to the east abruptly halt at a large gate,
+  - gold in color.  The size of the gate and its obvious magical bestowments
+  - give it the power to bar further passage into the world beyond until
+  - unlocked by those who find its key.
+  doors:
+  - desc: []
+    dir: east
+    keywords:
+    - gate
+    to: 122
+  - desc: []
+    dir: southwest
+    keywords: []
+    to: 119
+  extended_descriptions:
+  - desc:
+    - It would clearly take a large key to unlock this gate.  Maybe the resident
+    - of the cabin southwest of here has it.
+    keywords:
+    - gate
+  id: 121
+  name: Before the Passage
+- desc:
+  - You find yourself standing atop a wide mesa offering a spectacular view of
+  - the world below.   Expectation permeates the air, and you feel compelled
+  - to do something, as though some force awaits your actions.
+  doors:
+  - desc: []
+    dir: west
+    keywords:
+    - gate
+    to: 121
+  extended_descriptions: []
+  id: 122
+  name: A View of the World
+- desc:
+  - Dank musty air fills this room.  Fingers of darkness in the form of
+  - several begrimed cobwebs cling to your face.  Every movement seems
+  - to kick up long settled dust, making it nearly unbearable down here.
+  - The creaking from above is magnified, changed, and lends a haunting
+  - feel to this place.  Deep in the shadows is a small table, it holds
+  - 'only one item:  a partially burned wooden box.  The trapdoor is up.'
+  doors:
+  - desc: []
+    dir: up
+    keywords:
+    - trap
+    - trapdoor
+    to: 120
+  extended_descriptions: []
+  id: 123
+  name: A Musty Cellar
+- desc: []
+  doors: []
+  extended_descriptions: []
+  id: 199
+  name: Floating in a void
+SHOPS: []
+
